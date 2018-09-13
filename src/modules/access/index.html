@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cache-control" content="no-store">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>用户准入</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="preload-screen">
+      <h2>正在进入 <strong>用户准入系统</strong> ……</h2>
+      <p>如果浏览器长时间没有响应，建议使用<a target="_blank" href="https://www.google.cn/chrome/">谷歌浏览器</a>、<a target="_blank" href="http://chrome.360.cn">360浏览器</a>或<a target="_blank" href="http://www.firefox.com.cn/">火狐浏览器</a>等最新版本的浏览器打开</p>
+      <p>平台当前版本：
+        <%= htmlWebpackPlugin.options.version %>
+      </p>
+    </div>
+  </div>
+  <script src="/static/config.js"></script>
+  <script>
+    // VERSIONS
+    var INDEX_VERSION = '<%= htmlWebpackPlugin.options.version %>';
+  </script>
+</body>
+
+</html>
